@@ -52,21 +52,28 @@ header .menu a:hover {
 
 header .banner {
     color: var(--text-color);
-    border-style: solid;
-    border-color: black;
+    background-color:gray;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+#gradient {
+    background-color: rgb(245, 183, 25);
+    background-image: linear-gradient(to right,rgb(245, 183, 25),rgb(285, 81, 36));
+}
+
+#gradient:hover {
+    background-image: linear-gradient(to left,rgb(245, 183, 25),rgb(285, 81, 36));
+}
 
 /* Controls */
 
 .button {
     padding: 0.35em 1.2em;
-    border: 0.1em solid #FFFFFF;
-    margin: 0 0.3em 0.3em 0;
     border-radius: 1em;
+    border-color: rgb(255, 255, 255, 0);
     color: #FFFFFF;
     text-align: center;
     text-decoration: none;
