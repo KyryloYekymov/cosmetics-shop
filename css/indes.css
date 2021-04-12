@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+:root {
+    font-family: 'Abel', sans-serif;
+    --text-color: white;
+}
+
+body {
+    max-width: 980px;
+    margin: auto;
+}
+
+.logo img {
+    width: 79px;
+    height: auto;
+}
+
+header {
+    background-image: url('https://res2.weblium.site/res/5c6baeb282446900223a8ad2/5c6cf805701d3b0025eedc99_optimized_1200.webp');
+    
+}
+
+header .menu a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+header .menu a:hover {
+    color: rgb(235 181 25);
+}
+
