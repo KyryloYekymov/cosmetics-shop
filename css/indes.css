@@ -3,11 +3,26 @@
 :root {
     font-family: 'Abel', sans-serif;
     --text-color: white;
+    scroll-behavior: smooth;
 }
 
 body {
     max-width: 980px;
     margin: auto;
+}
+
+@media (min-width: 480px) {
+    header nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
 }
 
 .logo img {
@@ -17,7 +32,13 @@ body {
 
 header {
     background-image: url('https://res2.weblium.site/res/5c6baeb282446900223a8ad2/5c6cf805701d3b0025eedc99_optimized_1200.webp');
-    
+    background-size: cover;
+    margin: 15px 20px 20px 20px;
+    min-height: 540px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
 }
 
 header .menu a {
@@ -29,3 +50,32 @@ header .menu a:hover {
     color: rgb(235 181 25);
 }
 
+header .banner {
+    color: var(--text-color);
+    border-style: solid;
+    border-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Controls */
+
+.button {
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #FFFFFF;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 1em;
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+    transition: color 0.7s;
+    background-color: transparent;
+}
+
+.button:hover {
+    color: #000000;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
