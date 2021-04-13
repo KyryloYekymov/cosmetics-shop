@@ -71,6 +71,11 @@ header div .banner {
     background-image: linear-gradient(to right,rgb(224, 55, 102),rgb(175, 45, 127));
 }
 
+hr {
+    width: 8rem;
+    color: var(--text-color-primary-dark);
+}
+
 h1 {
     font-size: 3.75rem;
     margin-bottom: 0;
@@ -79,6 +84,16 @@ h1 {
 
 h2 {
     font-size: var(--text-size-subheadings);
+}
+
+h3 a{
+    text-decoration: none;    
+    color: var(--text-color-primary-dark);
+    font-size: 1.4375rem;
+}
+
+h3 a:hover {
+    text-decoration: underline;
 }
 
 .banner-text {
@@ -108,30 +123,33 @@ h2 {
     color: var(--text-color-paragraphs);
 }
 
-.our-bestsellers {
+.bestsellers {
     background-color: rgb(243, 242, 241);
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr 1fr;
-    grid-template-areas:
-    "div div div"
-    "article1 article2 article3";
+    display: flex;
+    flex-direction: column;
 }
 
 .bestsellers-header {
-    grid-area: div;
-}
-.article1 {
-    grid-area: aricle1;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
-.article2 {
-    grid-area: article2;
+.bestsellers-body {
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
 }
 
-.article3 {
-    grid-area: article3;
+.bestsellers-article p {
+    font-size: 1.7rem;
+    color: var(--text-color-accent);
+    text-align: center;
 }
+
+.bestsellers-article a img {
+    width: 275px;
+ }
+
 /* Controls */
 
 .button {
@@ -143,6 +161,9 @@ h2 {
     text-decoration: none;
     transition: color 0.7s;
     font-size: 0.875rem;
+}
+
+#button-banner {
     margin-top: 40px;
     margin-bottom: 50px;
 }
@@ -152,103 +173,14 @@ h2 {
     cursor: pointer;
 }
 
-#gradient-button {
+.gradient-button {
     background-color: rgb(245, 183, 25);
     background-image: linear-gradient(to right,rgb(245, 183, 25),rgb(285, 81, 36));
 }
 
-#gradient-button:hover {
+.gradient-button:hover {
     background-color: rgb(245, 183, 25);
     background-image: linear-gradient(to left,rgb(245, 183, 25),rgb(285, 81, 36));
 }
 
 /* Media Queries */
-
-
-/*
-body {
-    /* max-width: 980px;
-    margin: auto;
-    padding: 15px 25px 25px 25px;
-}
-
-@media (min-width: 480px) {
-    header nav {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-    }
-}
-
-.logo {
-    display: flex;
-    justify-content: center;
-}
-
-
-
-header {
-    background-image: url('https://res2.weblium.site/res/5c6baeb282446900223a8ad2/5c6cf805701d3b0025eedc99_optimized_1200.webp');
-    background-color: #cccccc;
-    height: 925px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: right;
-    display: flex;
-    flex-direction: column;
-    justify-content:flex-start;
-    align-items: center;
-}
-
-
-
-header .menu a:hover {
-    color: rgb(235 181 25);
-}
-
-header .banner {
-    color: var(--text-color-primary-light);
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: center;
-}
-
-#gradient-butoon {
-    background-color: rgb(245, 183, 25);
-    background-image: linear-gradient(to right,rgb(245, 183, 25),rgb(285, 81, 36));
-}
-
-
-#gradient-button:hover {
-    background-image: linear-gradient(to left,rgb(245, 183, 25),rgb(285, 81, 36));
-}
-
-#gradient {
-    background-color: rgb(245, 183, 25);
-    background-image: linear-gradient(to right,rgb(224, 55, 102),rgb(175, 45, 127));
-}
-
-
-<!--Controls -->
-
-.button {
-    padding: 0.35em 1.2em;
-    border-radius: 1em;
-    border-color: rgb(255, 255, 255, 0);
-    color: #FFFFFF;
-    text-align: center;
-    text-decoration: none;
-    transition: color 0.7s;
-    background-color: transparent;
-}
-
-.button:hover {
-    color: #000000;
-    background-color: #FFFFFF;
-    cursor: pointer;
-}
-*/
