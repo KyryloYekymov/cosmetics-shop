@@ -2,24 +2,32 @@
 
 :root {
     font-family: 'Abel', sans-serif;
-    --text-color: white;
+    --text-color-primary-light: white;
+    --text-color-primary-dark: black;
+    --text-color-paragraphs: rgb(88, 81, 87);
+    --text-color-accent: rgb(245, 183, 25);
     font-weight: 400;
     font-stretch: 100%;
     scroll-behavior: smooth;
+    --text-size-subheadings: 2.3125rem;
+    --text-size-paragraph: 1.125rem;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     margin: auto;
     padding: 15px 30px 0px 30px;
+    width: min(100%, 85rem);
 }
 
 .logo img {
     margin-top: 25px;
-    width: 79px;
+    width: 70px;
     height: auto;
 }
 
-header .menu {
+header div .menu {
     width: 60%;
     margin-top: 50px;
     display: flex;
@@ -28,12 +36,12 @@ header .menu {
 
 header .menu a {
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--text-color-primary-light);
     font-size: 20px;
 }
 
 header .menu a:hover {
-    color: rgb(235 181 25);
+    color: var(--text-color-accent);
 }
 
 .container {
@@ -48,8 +56,8 @@ header .menu a:hover {
     align-items: center;
 }
 
-header .banner {
-    color: var(--text-color);
+header div .banner {
+    color: var(--text-color-primary-light);
     margin-top: 125px;
     width: 550px;
     height: 350px;
@@ -64,34 +72,83 @@ header .banner {
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 3.75rem;
     margin-bottom: 0;
     margin-top: 75px;
 }
 
+h2 {
+    font-size: var(--text-size-subheadings);
+}
+
 .banner-text {
-    font-size: 18px;
+    font-size: 1.125rem;
     margin-top: 0;
     letter-spacing: 0.7px;
 }
 
+.our-philosophy {
+    padding: 30px 0px 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.our-philosophy-image img {
+    width: 690px;
+    height: auto;
+}
+
+.our-philosophy-text {
+    padding: 30px 30px 30px 30px;
+}
+
+.our-philosophy-text p {
+    padding: 30px 0px 30px 0;
+    color: var(--text-color-paragraphs);
+}
+
+.our-bestsellers {
+    background-color: rgb(243, 242, 241);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr;
+    grid-template-areas:
+    "div div div"
+    "article1 article2 article3";
+}
+
+.bestsellers-header {
+    grid-area: div;
+}
+.article1 {
+    grid-area: aricle1;
+}
+
+.article2 {
+    grid-area: article2;
+}
+
+.article3 {
+    grid-area: article3;
+}
 /* Controls */
 
 .button {
     padding: 0.75em 2em;
     border-radius: 1.5em;
     border-color: rgb(255, 255, 255, 0);
-    color:var(--text-color);
+    color:var(--text-color-primary-light);
     text-align: center;
     text-decoration: none;
     transition: color 0.7s;
-    font-size: 14px;
-    margin-top: 30px;
+    font-size: 0.875rem;
+    margin-top: 40px;
+    margin-bottom: 50px;
 }
 
 .button:hover {
-    color: #000000;
-    background-color: var(--text-color);
+    background-color: var(--text-color-primary-light);
     cursor: pointer;
 }
 
@@ -104,6 +161,9 @@ h1 {
     background-color: rgb(245, 183, 25);
     background-image: linear-gradient(to left,rgb(245, 183, 25),rgb(285, 81, 36));
 }
+
+/* Media Queries */
+
 
 /*
 body {
@@ -149,7 +209,7 @@ header .menu a:hover {
 }
 
 header .banner {
-    color: var(--text-color);
+    color: var(--text-color-primary-light);
     margin-top: 50px;
     display: flex;
     flex-direction: column;
