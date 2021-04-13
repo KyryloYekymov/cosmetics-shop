@@ -3,12 +3,113 @@
 :root {
     font-family: 'Abel', sans-serif;
     --text-color: white;
+    font-weight: 400;
+    font-stretch: 100%;
     scroll-behavior: smooth;
 }
 
 body {
-    max-width: 980px;
     margin: auto;
+    padding: 15px 30px 0px 30px;
+}
+
+.logo img {
+    margin-top: 25px;
+    width: 79px;
+    height: auto;
+}
+
+header .menu {
+    width: 60%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header .menu a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 20px;
+}
+
+header .menu a:hover {
+    color: rgb(235 181 25);
+}
+
+.container {
+    background-image: url('https://res2.weblium.site/res/5c6baeb282446900223a8ad2/5c6cf805701d3b0025eedc99_optimized_1200.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 950px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .banner {
+    color: var(--text-color);
+    margin-top: 125px;
+    width: 550px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#gradient-banner {
+    background-color: rgb(245, 183, 25);
+    background-image: linear-gradient(to right,rgb(224, 55, 102),rgb(175, 45, 127));
+}
+
+h1 {
+    font-size: 60px;
+    margin-bottom: 0;
+    margin-top: 75px;
+}
+
+.banner-text {
+    font-size: 18px;
+    margin-top: 0;
+    letter-spacing: 0.7px;
+}
+
+/* Controls */
+
+.button {
+    padding: 0.75em 2em;
+    border-radius: 1.5em;
+    border-color: rgb(255, 255, 255, 0);
+    color:var(--text-color);
+    text-align: center;
+    text-decoration: none;
+    transition: color 0.7s;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+.button:hover {
+    color: #000000;
+    background-color: var(--text-color);
+    cursor: pointer;
+}
+
+#gradient-button {
+    background-color: rgb(245, 183, 25);
+    background-image: linear-gradient(to right,rgb(245, 183, 25),rgb(285, 81, 36));
+}
+
+#gradient-button:hover {
+    background-color: rgb(245, 183, 25);
+    background-image: linear-gradient(to left,rgb(245, 183, 25),rgb(285, 81, 36));
+}
+
+/*
+body {
+    /* max-width: 980px;
+    margin: auto;
+    padding: 15px 25px 25px 25px;
 }
 
 @media (min-width: 480px) {
@@ -25,26 +126,23 @@ body {
     justify-content: center;
 }
 
-.logo img {
-    width: 79px;
-    height: auto;
-}
+
 
 header {
     background-image: url('https://res2.weblium.site/res/5c6baeb282446900223a8ad2/5c6cf805701d3b0025eedc99_optimized_1200.webp');
+    background-color: #cccccc;
+    height: 925px;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    margin: 15px 20px 20px 20px;
-    min-height: 540px;
+    position: right;
     display: flex;
     flex-direction: column;
     justify-content:flex-start;
     align-items: center;
 }
 
-header .menu a {
-    text-decoration: none;
-    color: var(--text-color);
-}
+
 
 header .menu a:hover {
     color: rgb(235 181 25);
@@ -52,23 +150,30 @@ header .menu a:hover {
 
 header .banner {
     color: var(--text-color);
-    background-color:gray;
     margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: center;
 }
 
-#gradient {
+#gradient-butoon {
     background-color: rgb(245, 183, 25);
     background-image: linear-gradient(to right,rgb(245, 183, 25),rgb(285, 81, 36));
 }
 
-#gradient:hover {
+
+#gradient-button:hover {
     background-image: linear-gradient(to left,rgb(245, 183, 25),rgb(285, 81, 36));
 }
 
-/* Controls */
+#gradient {
+    background-color: rgb(245, 183, 25);
+    background-image: linear-gradient(to right,rgb(224, 55, 102),rgb(175, 45, 127));
+}
+
+
+<!--Controls -->
 
 .button {
     padding: 0.35em 1.2em;
@@ -86,3 +191,4 @@ header .banner {
     background-color: #FFFFFF;
     cursor: pointer;
 }
+*/
