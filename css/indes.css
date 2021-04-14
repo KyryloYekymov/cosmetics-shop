@@ -8,13 +8,16 @@
     --text-color-accent: rgb(245, 183, 25);
     --background-color-light: rgb(243, 242, 241);
     --background-color-dark:rgb(60, 38, 81);
-    font-weight: 400;
     font-stretch: 100%;
     scroll-behavior: smooth;
     --text-size-subheadings: 2.3125rem;
     --text-size-paragraph: 1.125rem;
     margin: 0;
     padding: 0;
+}
+
+* {
+    font-weight: 400;
 }
 
 body {
@@ -82,10 +85,14 @@ h1 {
     font-size: 3.75rem;
     margin-bottom: 0;
     margin-top: 75px;
+    letter-spacing: 4px;
 }
 
 h2 {
     font-size: var(--text-size-subheadings);
+    text-align: center;
+    letter-spacing: 3px;
+
 }
 
 h3 {
@@ -293,6 +300,58 @@ input[type="submit"] {
     margin-bottom: 30px;
 }
 
+.block {
+    margin-top: 30px;
+    background-color: var(--background-color-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block-body {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.block-header {
+    margin-bottom: 30px;
+}
+
+.block-body div img {
+    width: 200px;
+}
+
+.certificate {
+    display: flex;
+    flex-direction: column;
+}
+
+.reviews {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.review-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.reviews-body {
+    display: flex;
+    justify-content: space-around;
+}
+
+.a-review {
+    width: 300px;
+    text-align: center;
+}
+
+.review-text {
+    text-align: center;
+}
 /* Controls */
 
 .button-link {
