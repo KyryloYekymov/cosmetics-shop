@@ -266,12 +266,16 @@ input[type="submit"] {
 .ingredients-header p {
     color: var(--text-color-paragraphs);
 }
-`
+
 .ingredients-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-around;
     padding-left: 100px;
+}
+
+.ingredients-grid h3 {
+    margin-left: 35px;
 }
 
 .single-ingredient {
