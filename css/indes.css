@@ -17,7 +17,7 @@
 }
 
 * {
-    font-weight: 400;
+    font-weight: 100;
 }
 
 body {
@@ -37,12 +37,6 @@ header div .menu {
     margin-top: 50px;
     display: flex;
     justify-content: space-evenly;
-}
-
-header .menu a {
-    text-decoration: none;
-    color: var(--text-color-primary-light);
-    font-size: 20px;
 }
 
 header .menu a:hover {
@@ -83,6 +77,7 @@ hr {
 
 h1 {
     font-size: 3.75rem;
+    font-weight: 200;
     margin-bottom: 0;
     margin-top: 75px;
     letter-spacing: 4px;
@@ -92,7 +87,6 @@ h2 {
     font-size: var(--text-size-subheadings);
     text-align: center;
     letter-spacing: 3px;
-
 }
 
 h3 {
